@@ -82,11 +82,16 @@ a {
 }
 
 .hero {
-  padding: 1.4375rem 2.3125rem;
+  padding: 1.4375rem 2.3125rem 0;
 }
 @media (min-width: 620px) {
   .hero {
-    padding: 1.8125rem 4.5625rem;
+    padding: 1.8125rem 4.5625rem 0;
+  }
+
+  .hero__grid {
+    display: flex;
+    gap: 2rem;
   }
 }
 
@@ -104,6 +109,14 @@ a {
   padding-top: 1.1875rem;
   text-align: center;
 }
+@media (min-width: 620px) {
+  .hero__text {
+    text-align: left;
+    padding: 2.6875rem 1.3125rem;
+    letter-spacing: -0.78px;
+    line-height: 1.45;
+  }
+}
 
 .hero__title {
   margin-top: 1.215rem;
@@ -111,19 +124,80 @@ a {
   font-family: var(--poppins);
   font-weight: 600;
 }
+@media (min-width: 620px) {
+  .hero__title {
+    margin-top: 0;
+    font-size: 2.5625rem;
+  }
+}
 
 .hero__description {
   margin-top: 0.875rem;
   margin-bottom: 1.5rem;
   line-height: 1.4875;
 }
+@media (min-width: 620px) {
+  .hero__description {
+    margin-top: 1.25rem;
+    margin-bottom: 1.565rem;
+    font-size: 1.125rem;
+    letter-spacing: 0;
+    line-height: 1.5;
+  }
+}
 
 .hero__button {
   display: inline-block;
+  font-family: var(--poppins);
   background-color: var(--white);
   color: var(--violet);
-  padding: 9px 70px;
+  padding: 0.5625rem 4.375rem;
   border-radius: 5rem;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+@media (min-width: 620px) {
+  .hero__button {
+    padding: 0.85rem 3.95rem 1rem;
+    font-size: 18px;
+    letter-spacing: 0.1px;
+  }
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  background-color: var(--soft-Magenta);
+  color: var(--white);
+  outline-offset: 3px;
+}
+
+.hero__social {
+  margin-top: 2.4rem;
+  padding-top: 1.4375rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.hero__social a {
+  display: inline-block;
+  color: var(--white);
+  font-size: 0.875rem;
+  border: solid 1px var(--white);
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  transition: border 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.hero__social a:hover,
+.hero__social a:focus {
+  border: solid 1px var(--soft-Magenta);
+  color: var(--soft-Magenta);
+  outline-offset: 3px;
+}
+
+.hero__social a:not(:last-child) {
+  margin-right: 10px;
 }
 
 @media (min-width: 620px) {
