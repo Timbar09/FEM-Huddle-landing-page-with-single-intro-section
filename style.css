@@ -10,6 +10,7 @@ html {
 }
 
 :root {
+  --white: hsl(0, 0%, 100%);
   --violet: hsl(257, 40%, 49%);
   --soft-Magenta: hsl(300, 69%, 71%);
 
@@ -21,7 +22,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--openSans);
+  font-weight: 400;
   font-size: 1rem;
+  background-color: rgb(142, 133, 133);
+  color: var(--white);
 }
 
 a {
@@ -51,21 +55,75 @@ a {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 32px 34px;
+  padding: 2rem 2.125rem;
 }
 @media (min-width: 620px) {
   .header {
-    padding: 53px 69px;
+    padding: 3.3125rem 4.3125rem;
   }
 }
 
 .header__logo img {
-  width: 129px;
+  width: 8.0625rem;
 }
 @media (min-width: 620px) {
   .header__logo img {
-    width: 216px;
+    width: 13.5rem;
   }
+}
+
+.main {
+  padding-top: 6.2948125rem;
+}
+@media (min-width: 620px) {
+  .main {
+    padding-top: 10.2656rem;
+  }
+}
+
+.hero {
+  padding: 1.4375rem 2.3125rem;
+}
+@media (min-width: 620px) {
+  .hero {
+    padding: 1.8125rem 4.5625rem;
+  }
+}
+
+@media (max-width: 619px) {
+  .hero__image {
+    margin-bottom: 1rem;
+  }
+
+  .hero__image img {
+    width: 18.8125rem;
+  }
+}
+
+.hero__text {
+  padding-top: 1.1875rem;
+  text-align: center;
+}
+
+.hero__title {
+  margin-top: 1.215rem;
+  margin-bottom: 0;
+  font-family: var(--poppins);
+  font-weight: 600;
+}
+
+.hero__description {
+  margin-top: 0.875rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4875;
+}
+
+.hero__button {
+  display: inline-block;
+  background-color: var(--white);
+  color: var(--violet);
+  padding: 9px 70px;
+  border-radius: 5rem;
 }
 
 @media (min-width: 620px) {
