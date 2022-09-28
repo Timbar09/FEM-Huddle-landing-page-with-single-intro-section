@@ -24,7 +24,12 @@ body {
   font-size: 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .stensil {
+  position: relative;
   height: 100vh;
   max-width: 375px;
   margin: auto;
@@ -39,4 +44,29 @@ body {
     max-width: 1440px;
     background-image: url('./design/desktop-design.jpg');
   }
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 32px 34px;
+}
+@media (min-width: 620px) {
+  .header {
+    padding: 53px 69px;
+  }
+}
+
+.header__logo img {
+  width: 129px;
+}
+@media (min-width: 620px) {
+  .header__logo img {
+    width: 216px;
+  }
+}
+
+@media (min-width: 620px) {
 }
