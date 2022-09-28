@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-Magenta: hsl(300, 69%, 71%);
+
+  --poppins: 'Poppins', sans-serif;
+  --openSans: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--openSans);
+  font-size: 1rem;
+}
+
+.stensil {
+  height: 100vh;
+  max-width: 375px;
+  margin: auto;
+  background-image: url('./design/mobile-design.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 620px) {
+  .stensil {
+    height: 800px;
+    max-width: 1440px;
+    background-image: url('./design/desktop-design.jpg');
+  }
+}
