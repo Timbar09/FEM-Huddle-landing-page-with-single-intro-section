@@ -80,10 +80,15 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (min-width: 1020px) {
+  .hero {
+    background-image: url('./images/bg-desktop.svg');
+  }
+}
+
 @media (min-width: 1400px) {
   .hero {
     padding: 12.0781rem 4.5625rem 0;
-    background-image: url('./images/bg-desktop.svg');
   }
 }
 
@@ -92,10 +97,6 @@ a {
   max-width: 600px;
   margin: auto;
 }
-/* @media (min-width: 640px) {
-  .hero__grid {
-  }
-} */
 
 @media (min-width: 1020px) {
   .hero__grid {
